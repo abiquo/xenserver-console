@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.citrix.xenserver</groupId>
-	<artifactId>console</artifactId>
-	<version>5.6.0-1</version>
-	<name>XenServer Console API</name>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.citrix.xenserver</groupId>
+    <artifactId>console</artifactId>
+    <version>5.6.0-1</version>
+    <name>XenServer Console API</name>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.apache.xmlrpc</groupId>
-			<artifactId>xmlrpc-common</artifactId>
-			<version>3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.xmlrpc</groupId>
-			<artifactId>xmlrpc-client</artifactId>
-			<version>3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.ws.commons.util</groupId>
-			<artifactId>ws-commons-util</artifactId>
-			<version>1.0.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.xensource</groupId>
-			<artifactId>xenserver</artifactId>
-			<version>5.6.0-1</version>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.xmlrpc</groupId>
+            <artifactId>xmlrpc-common</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlrpc</groupId>
+            <artifactId>xmlrpc-client</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ws.commons.util</groupId>
+            <artifactId>ws-commons-util</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xensource</groupId>
+            <artifactId>xenserver</artifactId>
+            <version>5.6.0-1</version>
+        </dependency>
+    </dependencies>
 
-	<!-- Repositories -->
-	<repositories>
-		<repository>
-			<id>abiquo-repo</id>
-			<name>Abiquo Maven Repository</name>
-			<url>http://repo.community.abiquo.com/repo</url>
-		</repository>
-	</repositories>
+    <!-- Repositories -->
+    <repositories>
+        <repository>
+            <id>abiquo-repo</id>
+            <name>Abiquo Maven Repository</name>
+            <url>http://repo.community.abiquo.com/repo</url>
+        </repository>
+    </repositories>
 
-	<!-- Plugin Repositories -->
-	<pluginRepositories>
-		<pluginRepository>
-			<id>abiquo-repo</id>
-			<name>Abiquo Maven Repository</name>
-			<url>http://repo.community.abiquo.com/repo</url>
-		</pluginRepository>
-	</pluginRepositories>
+    <!-- Plugin Repositories -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>abiquo-repo</id>
+            <name>Abiquo Maven Repository</name>
+            <url>http://repo.community.abiquo.com/repo</url>
+        </pluginRepository>
+    </pluginRepositories>
 
-	<!-- Distribution Management -->
-	<distributionManagement>
-		<repository>
-			<id>abiquo-repo</id>
-			<url>http://repo.community.abiquo.com/ext-releases-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>abiquo-repo</id>
-			<url>http://repo.community.abiquo.com/ext-snapshots-local</url>
-		</snapshotRepository>
-	</distributionManagement>
+    <!-- Distribution Management -->
+    <distributionManagement>
+        <repository>
+            <id>abiquo-repo</id>
+            <url>http://repo.community.abiquo.com/ext-releases-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>abiquo-repo</id>
+            <url>http://repo.community.abiquo.com/ext-snapshots-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
 
